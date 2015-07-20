@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Match Maker</title>
+  </head>
+  <body>
+    <form class="input" action="index.html" method="post" name="person">
+      <input type="text" name="name" value="Student Name">
+      <input type="text" name="phone" value="Telephone Number">
+      <input type="text" name="city" value="City">
+      <input type="button" name="submit" value="CREATE NEW STUDENT" onclick="addPerson(students)">
+      <input type="button" name="submit" value="CREATE NEW MENTOR" onclick="addPerson(mentors)">
+    </form>
+    <div id = "studentList">
+      <p>
+        students
+      </p>
+    </div>
+    <div id = "mentorList">
+      <p>
+        mentors
+      </p>
+    </div>
+    <button type="button" name="button" onclick="printStudentList()">PRINT STUDENTS</button>
+    <script src="dom.js" charset="utf-8"></script>
+    <script src="main.js" charset="utf-8"></script>
+  </body>
+</html>
